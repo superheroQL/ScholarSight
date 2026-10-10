@@ -1,0 +1,7 @@
+2026-08-11 14:33:23,677 - agent - INFO - lagger_hander.py:61 - 信息日志
+2026-08-11 14:33:23,678 - agent - ERROR - lagger_hander.py:62 - 错误日志
+2026-08-11 14:33:23,678 - agent - WARNING - lagger_hander.py:63 - 警告日志
+2026-08-11 14:33:23,678 - agent - DEBUG - lagger_hander.py:64 - 调试日志
+2026-08-11 15:09:54,022 - agent - ERROR - prompt_loader.py:21 - [load_system_prompts]解析系统提示词出错，[Errno 2] No such file or directory: 'd:\\Users\\VScodeProjects\\MealCraft\\backend\\app\\app/prompt/main_prompt.txt'
+2026-08-11 15:10:35,083 - agent - ERROR - prompt_loader.py:21 - [load_system_prompts]解析系统提示词出错，[Errno 2] No such file or directory: 'd:\\Users\\VScodeProjects\\MealCraft\\backend\\app\\prompt/main_prompt.txt'
+2026-08-11 15:19:28,380 - agent - ERROR - prompt_loader.py:35 - [load_rag_prompts]解析RAG总结提示词出错，[Errno 2] No such file or directory: 'd:\\Users\\VScodeProjects\\MealCraft\\backend\\app\\prompts/rag_summary_prompt.txt'

@@ -1,0 +1,122 @@
+2026-09-27 14:16:34,590 - agent - INFO - vector_store.py:197 - [向量入库]文本内容写入向量库成功（1个分片）
+2026-09-27 14:17:00,921 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 17 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:17:00,921 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 17 向量分片删除 0 条
+2026-09-27 14:17:33,830 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 7 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:17:33,831 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 7 向量分片删除 0 条
+2026-09-27 14:29:05,050 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 8 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:05,052 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 8 向量分片删除 0 条
+2026-09-27 14:29:07,625 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 9 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:07,625 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 9 向量分片删除 0 条
+2026-09-27 14:29:09,301 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 10 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:09,301 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 10 向量分片删除 0 条
+2026-09-27 14:29:15,499 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 11 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:15,500 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 11 向量分片删除 0 条
+2026-09-27 14:29:17,057 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 12 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:17,058 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 12 向量分片删除 0 条
+2026-09-27 14:29:19,149 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 13 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:29:19,149 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 13 向量分片删除 0 条
+2026-09-27 14:30:20,002 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（63383字，上限20000），跳过模型清洗，保留原文
+2026-09-27 14:30:20,002 - agent - INFO - papers.py:136 - [💡  论文入库]大模型清洗结果为空
+2026-09-27 14:30:29,948 - agent - INFO - vector_store.py:197 - [向量入库]文本内容写入向量库成功（175个分片）
+2026-09-27 14:32:02,310 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-27 14:32:02,310 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 用户本次提问选择的文献如下：
+1. The Visual Computer
+
+回答时请优先基于这些文献的内容。
+
+用户问题：这篇论文题目是什么
+2026-09-27 14:32:03,600 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-09-27 14:32:03,600 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '论文的标题是什么'}
+2026-09-27 14:32:05,436 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-09-27 14:32:05,437 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-27 14:32:05,437 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 基于跨层特征融合和信道关注的改进流量小目标检测
+2026-09-27 14:32:24,934 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-27 14:32:24,934 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 用户本次提问选择的文献如下：
+1. The Visual Computer
+
+回答时请优先基于这些文献的内容。
+
+用户问题：这篇论文原题目题目是什么
+2026-09-27 14:32:26,223 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-09-27 14:32:26,223 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '论文的原始英文题目是什么'}
+2026-09-27 14:32:27,557 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-09-27 14:32:27,557 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-09-27 14:32:27,557 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 参考资料中未提供论文的原始英文题目。
+2026-09-27 14:45:11,413 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（35484字，上限20000），跳过模型清洗，保留原文
+2026-09-27 14:45:11,414 - agent - INFO - papers.py:136 - [💡  论文入库]大模型清洗结果为空
+2026-09-27 14:45:45,265 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（76763字，上限20000），跳过模型清洗，保留原文
+2026-09-27 14:45:45,266 - agent - INFO - papers.py:136 - [💡  论文入库]大模型清洗结果为空
+2026-09-27 14:51:37,495 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（76763字，上限20000），跳过模型清洗，保留原文
+2026-09-27 14:51:37,496 - agent - INFO - papers.py:136 - [💡  论文入库]大模型清洗结果为空
+2026-09-27 14:52:17,308 - agent - ERROR - vector_store.py:173 - [❌ 向量删除]论文 18 删除失败：int() argument must be a string, a bytes-like object or a real number, not 'dict'
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\rag\vector_store.py", line 169, in delete_paper_chunks
+    count = len(result) if isinstance(result, list) else int(result or 0)
+                                                         ^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+2026-09-27 14:52:17,309 - agent - INFO - papers.py:178 - [🗑️ 删除论文]论文 18 向量分片删除 0 条
+2026-09-27 14:52:22,724 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（63383字，上限20000），跳过模型清洗，保留原文
+2026-09-27 14:52:22,724 - agent - INFO - papers.py:136 - [💡  论文入库]大模型清洗结果为空
+2026-09-27 14:58:56,270 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（63383字），截取前 20000 字进行提取
+2026-09-27 14:59:02,761 - agent - INFO - papers.py:134 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 14:59:16,373 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（63383字），截取前 20000 字进行提取
+2026-09-27 14:59:23,141 - agent - INFO - papers.py:134 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 15:02:46,964 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（63383字），截取前 20000 字进行提取
+2026-09-27 15:02:53,628 - agent - INFO - papers.py:134 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 15:03:04,535 - agent - INFO - vector_store.py:206 - [向量入库]文本内容写入向量库成功（175个分片）
+2026-09-27 15:49:51,482 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-27 15:49:51,483 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | YOLO-SSP: an object detection model based on pyramid spatial attention and improved downsampling strategy for remote sensing images向量知识库中有这篇论文吗
+2026-09-27 15:49:52,965 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-09-27 15:49:52,966 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': 'YOLO-SSP: an object detection model based on pyramid spatial attention and improved downsampling strategy for remote sensing images'}
+2026-09-27 15:49:54,957 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-09-27 15:49:54,957 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-27 15:49:54,957 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | YOLO-SSP是一种基于金字塔空间注意力和改进下采样策略的遥感图像目标检测模型，以YOLOv8m为基础，替换了原始下采样层，旨在提升遥感图像中的检测效果。
+2026-09-27 15:56:38,366 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（116189字），截取前 20000 字进行提取
+2026-09-27 15:56:43,582 - agent - INFO - papers.py:134 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 15:57:02,798 - agent - INFO - vector_store.py:206 - [向量入库]文本内容写入向量库成功（327个分片）
+2026-09-27 15:59:30,434 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（49162字），截取前 20000 字进行提取
+2026-09-27 15:59:37,455 - agent - INFO - papers.py:134 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 15:59:48,931 - agent - INFO - vector_store.py:206 - [向量入库]文本内容写入向量库成功（141个分片）
+2026-09-27 16:15:34,004 - agent - INFO - llm_extract.py:48 - [⚠️  PDF元数据]文本过长（35484字），截取前 20000 字进行提取
+2026-09-27 16:15:39,492 - agent - INFO - papers.py:137 - [💡  论文入库]采用大模型清洗后的元数据
+2026-09-27 16:15:47,107 - agent - INFO - vector_store.py:206 - [向量入库]文本内容写入向量库成功（97个分片）

@@ -1,0 +1,517 @@
+2026-08-12 09:09:44,610 - agent - ERROR - vector_store.py:106 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\季节时令菜谱知识库.docx加载失败：No module named 'docx2txt'
+Traceback (most recent call last):
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 85, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 66, in get_file_documents
+    return docx_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\utils\file_handler.py", line 67, in docx_loader
+    return Docx2txtLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 57, in load
+    import docx2txt
+ModuleNotFoundError: No module named 'docx2txt'
+2026-08-12 09:09:44,617 - agent - ERROR - vector_store.py:106 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\特殊人群饮食库_20种.docx加载失败：No module named 'docx2txt'
+Traceback (most recent call last):
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 85, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 66, in get_file_documents
+    return docx_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\utils\file_handler.py", line 67, in docx_loader
+    return Docx2txtLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 57, in load
+    import docx2txt
+ModuleNotFoundError: No module named 'docx2txt'
+2026-08-12 09:09:44,624 - agent - ERROR - vector_store.py:106 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\菜品知识库_50道.docx加载失败：No module named 'docx2txt'
+Traceback (most recent call last):
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 85, in load_document
+    documents: list[Document] = get_file_documents(path)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\rag\vector_store.py", line 66, in get_file_documents
+    return docx_loader(read_path)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Users\VScodeProjects\MealCraft\backend\app\utils\file_handler.py", line 67, in docx_loader
+    return Docx2txtLoader(filepath).load()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\document_loaders\word_document.py", line 57, in load
+    import docx2txt
+ModuleNotFoundError: No module named 'docx2txt'
+2026-08-12 09:11:43,202 - agent - INFO - vector_store.py:103 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\季节时令菜谱知识库.docx 内容加载成功
+2026-08-12 09:11:44,205 - agent - INFO - vector_store.py:103 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\特殊人群饮食库_20种.docx 内容加载成功
+2026-08-12 09:11:45,476 - agent - INFO - vector_store.py:103 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\菜品知识库_50道.docx 内容加载成功
+2026-08-12 09:14:24,139 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\季节时令菜谱知识库.docx内容已经存在知识库内，跳过
+2026-08-12 09:14:24,140 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\特殊人群饮食库_20种.docx内容已经存在知识库内，跳过
+2026-08-12 09:14:24,140 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\菜品知识库_50道.docx内容已经存在知识库内，跳过
+2026-08-12 09:24:42,091 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\季节时令菜谱知识库.docx内容已经存在知识库内，跳过
+2026-08-12 09:24:42,091 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\特殊人群饮食库_20种.docx内容已经存在知识库内，跳过
+2026-08-12 09:24:42,094 - agent - INFO - vector_store.py:81 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\菜品知识库_50道.docx内容已经存在知识库内，跳过
+2026-08-12 10:24:05,518 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在2025-01的使用记录数据
+2026-08-12 10:27:27,186 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在2025-01的使用记录数据
+2026-08-12 10:30:33,475 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在2025/1/1的使用记录数据
+2026-08-12 13:42:12,989 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 13:42:12,990 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 我今天想吃减脂餐，怎么做？
+2026-08-12 13:44:50,814 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 13:44:50,814 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）？
+2026-08-12 13:44:51,996 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 13:44:51,996 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 13:44:51,996 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 13:44:51,996 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 13:44:51,996 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 深圳
+2026-08-12 13:45:14,831 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 13:45:14,831 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '深圳'}
+2026-08-12 13:45:14,831 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 13:45:14,831 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 13:45:14,831 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市深圳天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 13:45:16,340 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 13:45:16,340 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '深圳26度晴天减脂餐推荐 家常做法'}
+2026-08-12 13:45:21,400 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 13:45:21,406 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 13:45:21,406 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 推荐以下适合深圳26度晴天的减脂家常菜：
+
+1. **香煎鸡胸肉**：鸡胸肉用黑胡椒腌制，平底锅少油煎熟，咸香低脂。  
+2. **玉米炒虾仁**：甜玉米、虾仁、胡萝卜丁焯水后大火快炒，清甜鲜嫩（虾过敏者慎食）。  
+3. **白灼菜心**：菜心开水焯熟，淋生抽，清淡脆嫩。  
+4. **香菇青菜**：先炒香菇，再加小青菜快炒，鲜淡可口（痛风者少食）。
+2026-08-12 14:02:01,771 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:02:01,771 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）？
+2026-08-12 14:02:03,001 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:02:03,001 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:02:03,002 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:02:03,003 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:02:03,003 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 合肥
+2026-08-12 14:02:04,766 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:02:04,768 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '合肥'}
+2026-08-12 14:02:04,768 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:02:04,768 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:02:04,768 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市合肥天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:04:44,446 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:04:44,446 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）？
+2026-08-12 14:04:45,663 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:04:45,663 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:04:45,664 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:04:45,665 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:04:45,665 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州
+2026-08-12 14:05:08,281 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:05:08,281 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '杭州'}
+2026-08-12 14:05:08,282 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:05:08,283 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:05:08,283 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市杭州天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:05:10,212 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:05:10,212 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '杭州26℃晴天适合的减脂餐推荐 家常做法'}
+2026-08-12 14:05:11,645 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:05:11,645 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:05:11,645 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 参考资料未提供具体减脂餐推荐及家常做法。
+2026-08-12 14:05:14,737 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:05:14,737 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '减脂餐 家常菜谱 低脂高蛋白 易做'}
+2026-08-12 14:05:17,089 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:05:17,090 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有9条消息。
+2026-08-12 14:05:17,090 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 鸡胸肉炒西兰花、清蒸鲈鱼、番茄豆腐汤、水煮虾、凉拌鸡丝黄瓜。
+2026-08-12 14:05:18,859 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:05:18,859 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '26℃晴天杭州时令蔬菜推荐'}
+2026-08-12 14:05:20,889 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:05:20,889 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有11条消息。
+2026-08-12 14:05:20,889 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州26℃晴天时令蔬菜推荐：苋菜、空心菜、毛豆、四季豆、黄瓜、丝瓜、苦瓜、茄子、番茄。
+2026-08-12 14:08:55,116 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:08:55,116 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃儿童餐，怎么做（不要问我）？
+2026-08-12 14:08:56,766 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:08:56,766 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:08:56,767 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:08:56,768 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:08:56,768 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州
+2026-08-12 14:08:58,078 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:08:58,078 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '杭州'}
+2026-08-12 14:08:58,079 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:08:58,080 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:08:58,080 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市杭州天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:09:00,380 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:09:00,380 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '杭州晴天26度适合的儿童餐菜谱 家常易做 营养均衡'}
+2026-08-12 14:09:05,482 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:09:05,483 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:09:05,484 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 清蒸鲈鱼、番茄炒蛋、蒜蓉西兰花、紫菜蛋花汤、米饭。
+2026-08-12 14:11:24,005 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:11:24,005 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 给我生成我的使用报告
+2026-08-12 14:11:25,622 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_id
+2026-08-12 14:11:25,622 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:11:25,623 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_id调用成功
+2026-08-12 14:11:25,623 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:11:25,624 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 1004
+2026-08-12 14:11:27,011 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_current_month
+2026-08-12 14:11:27,011 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:11:27,012 - agent - INFO - middleware.py:28 - [tool monitor]工具get_current_month调用成功
+2026-08-12 14:11:27,013 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:11:27,013 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 2025-06
+2026-08-12 14:11:28,294 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fill_context_for_report
+2026-08-12 14:11:28,294 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:11:28,295 - agent - INFO - middleware.py:28 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-12 14:11:28,296 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:11:28,296 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-12 14:11:30,220 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:11:30,221 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-06'}
+2026-08-12 14:11:30,224 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-06的使用记录数据
+2026-08-12 14:11:30,224 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:11:30,224 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有9条消息。
+2026-08-12 14:11:30,225 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:11:32,065 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:32,065 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭健康点菜报告模板结构与内容规范'}
+2026-08-12 14:11:39,173 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:11:39,174 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有11条消息。
+2026-08-12 14:11:39,174 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 家庭健康点菜报告模板应包含以下结构与内容规范：  
+1. **基本信息**：家庭成员姓名、年龄、性别、健康状况（如慢性病、过敏史等）。  
+2. **营养需求分析**：根据成员健康状况和膳食指南，明确每日所需能量及主要营养素（蛋白质、脂肪、碳水化合物、维生素、矿物质等）。  
+3. **菜品推荐**：按餐次（早、中、晚、加餐）列出具体菜品，注明食材、分量及烹饪方式，确保营养均衡、少油少盐少糖。  
+4. **健康提示**：针对特殊人群（如老人、儿童、孕妇、慢病患者）提供个性化饮食建议。  
+5. **备注说明**：包括食材替换建议、季节性调整提示及注意事项。
+2026-08-12 14:11:41,049 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:41,049 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '2025年6月夏季时令蔬菜水果及养生饮食原则'}
+2026-08-12 14:11:42,459 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:11:42,460 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有13条消息。
+2026-08-12 14:11:42,460 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 参考资料未提供相关内容。
+2026-08-12 14:11:44,135 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:44,135 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '夏季时令蔬菜水果及养生饮食原则'}
+2026-08-12 14:11:47,573 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:11:47,574 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有15条消息。
+2026-08-12 14:11:47,575 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 夏季时令蔬菜有黄瓜、苦瓜、冬瓜、丝瓜、番茄等；时令水果有西瓜、桃子、荔枝、杨梅、芒果等。养生饮食原则为清淡为主，多吃清热解暑、利湿生津的食物，少食油腻辛辣，注意补充水分和电解质。
+2026-08-12 14:11:49,354 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:49,355 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭用餐常见搭配问题及优化建议'}
+2026-08-12 14:11:51,170 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:11:51,171 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有17条消息。
+2026-08-12 14:11:51,171 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 参考资料未提供具体内容，无法回答。
+2026-08-12 14:11:52,772 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:52,772 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭膳食搭配常见问题与优化策略'}
+2026-08-12 14:11:54,771 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:11:54,773 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有19条消息。
+2026-08-12 14:11:54,773 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 参考资料未提供具体内容，无法回答。
+2026-08-12 14:11:56,620 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:11:56,620 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭健康饮食搭配原则与常见误区'}
+2026-08-12 14:12:00,513 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:12:00,514 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有21条消息。
+2026-08-12 14:12:00,515 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 家庭健康饮食搭配原则：食物多样、谷类为主；多吃蔬果、奶类、大豆；适量吃鱼、禽、蛋、瘦肉；少盐少油、控糖限酒；吃动平衡、健康体重。
+
+常见误区：主食吃得越少越好；只吃粗粮不吃细粮；迷信“无糖”食品；用饮料代替水；过度依赖保健品。
+2026-08-12 14:12:02,169 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:12:02,169 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '老人儿童孕妇等特殊人群夏季饮食注意事项'}
+2026-08-12 14:12:04,363 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:12:04,365 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有23条消息。
+2026-08-12 14:12:04,365 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 老人、儿童、孕妇等特殊人群夏季饮食应清淡易消化，多补充水分和电解质，避免生冷、油腻及不洁食物，注意饮食卫生，防止中暑和肠胃不适。
+2026-08-12 14:12:06,322 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:12:06,323 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '慢性病患者（如高血压、糖尿病）夏季饮食管理要点'}
+2026-08-12 14:12:10,599 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:12:10,600 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有25条消息。
+2026-08-12 14:12:10,600 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 1. 控制盐摄入，每日不超过5克，避免高盐腌制品。  
+2. 限制糖分，减少含糖饮料和甜食，选择低升糖指数食物。  
+3. 多吃新鲜蔬果，保证钾、镁等矿物质摄入。  
+4. 适量饮水，避免一次性大量饮用冰水。  
+5. 饮食清淡，少油少脂，避免油腻、辛辣刺激食物。
+2026-08-12 14:12:12,517 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:12,518 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-05'}
+2026-08-12 14:12:12,518 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-05的使用记录数据
+2026-08-12 14:12:12,518 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:12,519 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有27条消息。
+2026-08-12 14:12:12,519 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:14,743 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:14,744 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-04'}
+2026-08-12 14:12:14,744 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-04的使用记录数据
+2026-08-12 14:12:14,744 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:14,745 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有29条消息。
+2026-08-12 14:12:14,745 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:17,143 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:17,144 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-03'}
+2026-08-12 14:12:17,144 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-03的使用记录数据
+2026-08-12 14:12:17,145 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:17,145 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有31条消息。
+2026-08-12 14:12:17,146 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:19,499 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:19,499 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-02'}
+2026-08-12 14:12:19,500 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-02的使用记录数据
+2026-08-12 14:12:19,501 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:19,502 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有33条消息。
+2026-08-12 14:12:19,502 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:21,503 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:21,503 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2025-01'}
+2026-08-12 14:12:21,504 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2025-01的使用记录数据
+2026-08-12 14:12:21,504 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:21,506 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有35条消息。
+2026-08-12 14:12:21,506 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:23,493 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:23,494 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-12'}
+2026-08-12 14:12:23,494 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-12的使用记录数据
+2026-08-12 14:12:23,494 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:23,494 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有37条消息。
+2026-08-12 14:12:23,494 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:26,033 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:26,033 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-11'}
+2026-08-12 14:12:26,034 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-11的使用记录数据
+2026-08-12 14:12:26,034 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:26,035 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有39条消息。
+2026-08-12 14:12:26,035 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:28,004 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:28,005 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-10'}
+2026-08-12 14:12:28,005 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-10的使用记录数据
+2026-08-12 14:12:28,005 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:28,006 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有41条消息。
+2026-08-12 14:12:28,006 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:29,967 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:29,967 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-09'}
+2026-08-12 14:12:29,968 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-09的使用记录数据
+2026-08-12 14:12:29,968 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:29,968 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有43条消息。
+2026-08-12 14:12:29,969 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:31,946 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:31,946 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-08'}
+2026-08-12 14:12:31,947 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-08的使用记录数据
+2026-08-12 14:12:31,947 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:31,948 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有45条消息。
+2026-08-12 14:12:31,949 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:33,970 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:33,971 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-07'}
+2026-08-12 14:12:33,971 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-07的使用记录数据
+2026-08-12 14:12:33,971 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:33,972 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有47条消息。
+2026-08-12 14:12:33,973 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:12:36,460 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 14:12:36,461 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1004', 'month': '2024-06'}
+2026-08-12 14:12:36,461 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1004在2024-06的使用记录数据
+2026-08-12 14:12:36,461 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 14:12:36,462 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有49条消息。
+2026-08-12 14:12:36,462 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 14:15:28,901 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:15:28,901 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）
+2026-08-12 14:15:30,337 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:15:30,337 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:15:30,338 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:15:30,338 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:15:30,338 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州
+2026-08-12 14:15:31,830 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:15:31,830 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '杭州'}
+2026-08-12 14:15:31,835 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:15:31,835 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:15:31,835 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市杭州天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:15:34,218 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:15:34,218 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '杭州26度晴天适合的减脂餐推荐 家常做法'}
+2026-08-12 14:15:43,817 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:15:43,820 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:15:43,820 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州26度晴天适合清淡、低脂、高蛋白的家常减脂餐，推荐如下：
+
+1. **清蒸鸡胸肉+水煮西兰花+糙米饭**  
+   鸡胸肉用姜片、料酒腌制后清蒸；西兰花焯水；糙米提前浸泡后煮熟。
+
+2. **番茄炒蛋（少油）+凉拌黄瓜+紫薯**  
+   鸡蛋少油炒熟，加入去皮番茄翻炒；黄瓜拍碎加蒜末、醋、少量盐凉拌；紫薯蒸熟。
+
+3. **虾仁豆腐汤+清炒菠菜+藜麦饭**  
+   虾仁与嫩豆腐煮汤，加少许盐和白胡椒；菠菜清炒；藜麦煮熟代替主食。
+
+做法要点：少油少盐，避免油炸，多用蒸、煮、炖、凉拌方式。
+2026-08-12 14:25:45,313 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:25:45,313 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）
+2026-08-12 14:25:47,074 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:25:47,074 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:25:47,074 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:25:47,075 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:25:47,075 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 深圳
+2026-08-12 14:25:48,634 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:25:48,634 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '深圳'}
+2026-08-12 14:25:48,634 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:25:48,635 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:25:48,635 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市深圳天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:25:50,396 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:25:50,397 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '深圳晴天26度适合的减脂餐推荐 家常做法'}
+2026-08-12 14:25:54,513 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:25:54,514 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:25:54,514 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 深圳晴天26度适合的减脂餐推荐：清蒸鸡胸肉、水煮西兰花、糙米饭。家常做法：鸡胸肉用姜片、料酒腌制后清蒸10分钟；西兰花焯水3分钟；糙米提前浸泡后煮熟即可。
+2026-08-12 14:34:01,358 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:34:01,358 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）
+2026-08-12 14:34:02,596 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:34:02,596 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:34:02,596 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:34:02,596 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:34:02,596 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 杭州
+2026-08-12 14:34:04,131 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:34:04,132 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '杭州'}
+2026-08-12 14:34:04,132 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:34:04,132 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:34:04,132 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市杭州天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:34:05,677 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:34:05,677 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '杭州晴天26度适合的减脂餐推荐 家常做法'}
+2026-08-12 14:34:10,166 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:34:34,736 - agent - INFO - vector_store.py:105 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\季节时令菜谱知识库.docx 内容加载成功
+2026-08-12 14:34:35,470 - agent - INFO - vector_store.py:105 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\特殊人群饮食库_20种.docx 内容加载成功
+2026-08-12 14:34:36,472 - agent - INFO - vector_store.py:105 - [加载知识库]d:\Users\VScodeProjects\MealCraft\backend\app\data\菜品知识库_50道.docx 内容加载成功
+2026-08-12 14:34:49,343 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:34:49,343 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 根据今天的天气和我的位置，今天想吃减脂餐，怎么做（不要问我）
+2026-08-12 14:34:51,067 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_location
+2026-08-12 14:34:51,067 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 14:34:51,069 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_location调用成功
+2026-08-12 14:34:51,069 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:34:51,069 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 合肥
+2026-08-12 14:34:52,852 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_weather
+2026-08-12 14:34:52,852 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'city': '合肥'}
+2026-08-12 14:34:52,852 - agent - INFO - middleware.py:28 - [tool monitor]工具get_weather调用成功
+2026-08-12 14:34:52,857 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 14:34:52,857 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 城市合肥天气为晴天，气温26摄氏度，空气湿度50%，南风1级，AQI21，最近6小时降雨概率极低
+2026-08-12 14:34:54,769 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:34:54,769 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '合肥26度晴天适合的减脂餐推荐 家常做法'}
+2026-08-12 14:34:57,960 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:34:57,960 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 14:34:57,960 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 推荐减脂餐：香煎鸡胸肉（少油煎熟，咸香低脂）、玉米炒虾仁（清甜鲜，焯水快炒）、青椒土豆丝（脆爽微辣，泡水去淀粉后快炒）。做法简单，适合家常制作。
+2026-08-12 14:50:47,097 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:50:47,098 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 我想吃西红柿
+2026-08-12 14:51:10,820 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:51:10,820 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 直接给我答案
+2026-08-12 14:51:30,440 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:51:30,441 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 别问我，直接给我菜谱
+2026-08-12 14:56:55,539 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 14:56:55,539 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 我想吃西红柿
+2026-08-12 14:56:57,365 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 14:56:57,365 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '西红柿 家常菜谱 推荐'}
+2026-08-12 14:57:00,591 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 14:57:01,565 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 14:57:01,566 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 推荐西红柿家常菜谱：  
+1. **番茄炒蛋**（15分钟，简单）：酸甜鲜香，主料为番茄、鸡蛋、葱花。  
+2. **番茄炖牛腩**（70分钟，中等）：酸甜浓郁，主料为牛腩、番茄。
+2026-08-12 15:08:30,554 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 15:08:30,554 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 生成一份我的使用报告
+2026-08-12 15:08:31,842 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_id
+2026-08-12 15:08:31,842 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:08:31,842 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_id调用成功
+2026-08-12 15:08:31,897 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 15:08:31,897 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 1003
+2026-08-12 15:08:33,133 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_current_month
+2026-08-12 15:08:33,134 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:08:33,134 - agent - INFO - middleware.py:28 - [tool monitor]工具get_current_month调用成功
+2026-08-12 15:08:33,221 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 15:08:33,221 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 2025-08
+2026-08-12 15:08:34,403 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fill_context_for_report
+2026-08-12 15:08:34,403 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:08:34,403 - agent - INFO - middleware.py:28 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-12 15:08:34,696 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 15:08:34,697 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-12 15:08:36,467 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 15:08:36,467 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1003', 'month': '2025-08'}
+2026-08-12 15:08:36,468 - agent - ERROR - middleware.py:35 - 工具fetch_external_data调用失败，原因：外部数据文件D:\Users\VScodeProjects\MealCraft\backend\app\data/external/records.csv不存在
+2026-08-12 15:09:54,193 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 15:09:54,193 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 生成一份我的使用报告
+2026-08-12 15:09:55,682 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_id
+2026-08-12 15:09:55,682 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:09:55,683 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_id调用成功
+2026-08-12 15:09:55,737 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 15:09:55,737 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 1001
+2026-08-12 15:09:56,962 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_current_month
+2026-08-12 15:09:56,962 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:09:56,963 - agent - INFO - middleware.py:28 - [tool monitor]工具get_current_month调用成功
+2026-08-12 15:09:57,049 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 15:09:57,049 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 2025-12
+2026-08-12 15:09:58,059 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fill_context_for_report
+2026-08-12 15:09:58,059 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:09:58,060 - agent - INFO - middleware.py:28 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-12 15:09:58,346 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 15:09:58,347 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-12 15:09:59,957 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 15:09:59,957 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1001', 'month': '2025-12'}
+2026-08-12 15:09:59,958 - agent - ERROR - middleware.py:35 - 工具fetch_external_data调用失败，原因：外部数据文件D:\Users\VScodeProjects\MealCraft\backend\app\data/external/records.csv不存在
+2026-08-12 15:33:13,970 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在2026-01的使用记录数据
+2026-08-12 15:34:31,524 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在jan-25的使用记录数据
+2026-08-12 15:34:47,712 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在Jan-25的使用记录数据
+2026-08-12 15:39:40,372 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在Jan-25的使用记录数据
+2026-08-12 15:41:50,976 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1001在Jan-25的使用记录数据
+2026-08-12 15:44:26,853 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 15:44:26,854 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 生成一份我的使用报告
+2026-08-12 15:44:28,054 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_user_id
+2026-08-12 15:44:28,055 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:44:28,055 - agent - INFO - middleware.py:28 - [tool monitor]工具get_user_id调用成功
+2026-08-12 15:44:28,110 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 15:44:28,110 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 1007
+2026-08-12 15:44:29,175 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：get_current_month
+2026-08-12 15:44:29,175 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:44:29,176 - agent - INFO - middleware.py:28 - [tool monitor]工具get_current_month调用成功
+2026-08-12 15:44:29,263 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-08-12 15:44:29,263 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 2025-12
+2026-08-12 15:44:30,638 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fill_context_for_report
+2026-08-12 15:44:30,638 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{}
+2026-08-12 15:44:30,639 - agent - INFO - middleware.py:28 - [tool monitor]工具fill_context_for_report调用成功
+2026-08-12 15:44:30,931 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-08-12 15:44:30,931 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | fill_context_for_report已调用
+2026-08-12 15:44:33,012 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 15:44:33,012 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1007', 'month': '2025-12'}
+2026-08-12 15:44:33,013 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1007在2025-12的使用记录数据
+2026-08-12 15:44:33,014 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 15:44:33,014 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有9条消息。
+2026-08-12 15:44:33,015 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 15:44:34,784 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 15:44:34,785 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1007', 'month': '2025-11'}
+2026-08-12 15:44:34,785 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1007在2025-11的使用记录数据
+2026-08-12 15:44:34,785 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 15:44:34,786 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有11条消息。
+2026-08-12 15:44:34,786 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 15:44:36,575 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：fetch_external_data
+2026-08-12 15:44:36,575 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'user_id': '1007', 'month': '2025-10'}
+2026-08-12 15:44:36,576 - agent - WARNING - agent_tools.py:123 - [fetch_external_data]未能检索到用户：1007在2025-10的使用记录数据
+2026-08-12 15:44:36,576 - agent - INFO - middleware.py:28 - [tool monitor]工具fetch_external_data调用成功
+2026-08-12 15:44:36,576 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有13条消息。
+2026-08-12 15:44:36,577 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 
+2026-08-12 15:44:38,797 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 15:44:38,797 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '冬季家庭健康饮食原则与时令食材推荐'}
+2026-08-12 15:45:03,404 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 15:45:04,640 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有15条消息。
+2026-08-12 15:45:04,640 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 冬季家庭健康饮食原则：温补御寒、养肾固本、暖胃养血，忌食生冷、寒凉及生食食物。优先选择温补炖菜、暖胃汤品和热炒荤菜，提升膳食热量以适配低温天气。
+
+时令食材推荐：萝卜、白菜、土豆、胡萝卜、羊肉、牛肉、鲫鱼、冬笋、红枣、桂圆、山药。
+2026-08-12 15:45:06,541 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 15:45:06,543 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭常见饮食搭配误区及优化建议'}
+2026-08-12 15:45:11,832 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 15:45:13,635 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有17条消息。
+2026-08-12 15:45:13,635 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 家庭常见饮食搭配误区包括：吃饭时搭配浓茶、过度素食、常喝肉汤（如老火炖汤）、多选油炸或重油红烧菜、食用带细刺鱼或整颗坚果（尤其有幼儿时）。  
+优化建议：优先选择红肉搭配维C蔬菜（如青椒、番茄）；吃肉不喝汤，多饮水；采用清蒸、炖、凉拌等少油烹饪方式；确保食材软烂易消化，剔除鱼刺硬骨；避免辛辣、粗纤维及高脂菜品，增加膳食纤维和清淡蔬食。
+2026-08-12 15:45:15,147 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 15:45:15,147 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '老年人冬季饮食注意事项'}
+2026-08-12 15:45:23,259 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 15:45:26,282 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有19条消息。
+2026-08-12 15:45:26,283 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 老年人冬季饮食应以温补、软烂、易消化为主，注意以下几点：
+
+1. **忌食生冷寒凉**：避免生冷凉菜、苦瓜、冬瓜、生食海鲜等寒性食材。  
+2. **选择温补暖胃菜品**：如土豆炖牛肉、萝卜排骨汤、红烧排骨、鲫鱼豆腐汤、胡萝卜炒肉片、清炒大白菜等。  
+3. **烹饪方式宜炖、蒸、煮**：确保食物软烂，便于消化，减少干煸、油炸等硬质做法。  
+4. **少盐少油少糖少辣**：避免高糖甜汤、大量辛辣及过咸过油食物。  
+5. **注意安全**：慎选多刺鱼、带骨肉类，防止呛噎。  
+6. **优先应季温补食材**：如萝卜、白菜、土豆、胡萝卜、牛肉、鲫鱼、山药等。
+2026-08-12 15:45:27,767 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 15:45:27,768 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '儿童冬季饮食注意事项'}
+2026-08-12 15:45:31,662 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 15:45:32,963 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有21条消息。
+2026-08-12 15:45:32,964 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 儿童冬季饮食应以温补驱寒、暖胃养血为主，选择充分煮熟、软烂清淡的菜品，如萝卜排骨汤、土豆炖牛肉、胡萝卜炒肉片、清炒大白菜、南瓜粥等。忌食生冷凉菜、寒凉食材（如苦瓜、冬瓜）、生食海鲜、辛辣及带细刺鱼类，避免高盐高糖，确保剔除鱼刺、硬骨和坚果碎。
+2026-08-12 15:45:34,765 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 15:45:34,765 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '家庭健康膳食搭配标准'}
+2026-08-12 15:45:40,840 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 15:45:43,006 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有23条消息。
+2026-08-12 15:45:43,006 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 家庭健康膳食搭配标准：  
+- 按季节调整饮食，优先应季食材，如春季多豆制品、绿叶菜，夏季多瓜类蔬菜、清汤，秋季增润燥食材（莲藕、山药、银耳），冬季以温补炖菜、汤品为主。  
+- 荤素均衡搭配，如春季荤素比例3:7，夏季减少荤食，秋冬适量增加温补荤菜。  
+- 忌口因人而异：糖尿病人群少甜汤和温补炖菜，痛风人群避免浓汤海鲜。  
+- 四季均忌辛辣、油腻、燥热食物，夏季尤需清淡少油，冬季杜绝寒凉食材。
+2026-08-12 17:17:22,383 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 17:17:22,383 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 我想吃点不辣的菜，帮我推荐
+2026-08-12 17:17:23,952 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 17:17:23,952 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '不辣的家常菜推荐'}
+2026-08-12 17:17:28,925 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 17:17:30,489 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 17:17:30,489 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 推荐不辣的家常菜：  
+- 冬瓜炒虾仁（清淡鲜）  
+- 番茄炖牛腩（酸甜浓郁）  
+- 黄瓜炒鸡蛋（清爽）  
+- 冬瓜丸子汤（清淡鲜）  
+- 韭菜炒鸡蛋（鲜香）  
+- 土豆炖牛肉（咸香软烂）  
+- 番茄炒蛋（酸甜鲜香）  
+- 红烧排骨（咸甜浓郁）  
+- 清炒上海青（清淡爽口）
+2026-08-12 17:18:24,181 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-08-12 17:18:24,181 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 番茄炒蛋怎么做
+2026-08-12 17:18:25,816 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-08-12 17:18:25,816 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '番茄炒蛋 家常做法'}
+2026-08-12 17:18:28,422 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-08-12 17:18:29,043 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-08-12 17:18:29,043 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 番茄炒蛋家常做法：鸡蛋3枚炒熟盛出，番茄2个炒软出汁，再与鸡蛋混合翻炒，加葱花调味。全程约15分钟，口味酸甜鲜香。

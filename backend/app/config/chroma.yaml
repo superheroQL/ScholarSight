@@ -1,0 +1,12 @@
+collection_name: rag_collection
+persist_directory: data/chromadb
+k: 3
+data_path: data
+md5_hex_store: data/md5_hex_store/md5_hex_store.txt
+allow_knowledge_file_types: ["txt", "pdf", "docx"]
+
+chunk_size: 400
+chunk_overlap: 40
+separators : ["\n\n", "\n", "。", "！", "？", "!", "?", " ", ""]
+max_split_char_number: 400 # 文本分割时，单个分割块的最大字符数
+

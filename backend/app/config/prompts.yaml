@@ -1,0 +1,9 @@
+main_prompt: prompts/main_prompt.txt
+rag_summary_prompt: prompts/rag_summary_prompt.txt
+report_prompt: prompts/report_prompt.txt
+reorder_prompt: prompts/reorder_prompt.txt
+pdf_prompt: prompts/pdf_prompt.txt
+pdf_metadata_prompt: prompts/pdf_metadata_prompt.txt
+paper_analysis_prompt: prompts/paper_analysis_prompt.txt
+review_prompt: prompts/review_prompt.txt
+multi_paper_analysis_prompt: prompts/multi_paper_analysis_prompt.txt

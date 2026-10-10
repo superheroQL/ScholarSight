@@ -1,0 +1,182 @@
+2026-09-24 13:13:34,956 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-24 13:13:34,957 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 你是什么助手
+2026-09-24 13:13:56,139 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-24 13:13:56,139 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 1+1是多少
+2026-09-24 13:14:25,266 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有5条消息。
+2026-09-24 13:14:25,267 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 你能看到我选择的文献吗
+2026-09-24 13:14:59,129 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有7条消息。
+2026-09-24 13:14:59,131 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 现在知识库有几篇文献
+2026-09-24 13:15:00,978 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-09-24 13:15:00,978 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': '知识库中包含哪些论文或文献'}
+2026-09-24 13:15:03,288 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-09-24 13:15:03,288 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有9条消息。
+2026-09-24 13:15:03,288 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 知识库中包含以下论文：  
+1.《Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images》  
+2. 一篇标题为“This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.”的CVPR论文（内容涉及DETRs在实时目标检测上优于YOLOs）
+2026-09-24 13:24:04,596 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有9条消息。
+2026-09-24 13:24:04,596 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 用户本次提问选择的文献如下：
+1. Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images
+
+回答时请优先基于这些文献的内容。
+
+用户问题：分析一下这篇文献
+2026-09-24 13:24:06,206 - agent - INFO - middleware.py:23 - [tool monitor]执行工具：rag_summarize
+2026-09-24 13:24:06,206 - agent - INFO - middleware.py:24 - [tool monitor]传入参数：{'query': 'Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images 的研究背景、问题、方法、实验和结论'}
+2026-09-24 13:24:11,428 - agent - INFO - middleware.py:28 - [tool monitor]工具rag_summarize调用成功
+2026-09-24 13:24:11,429 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有11条消息。
+2026-09-24 13:24:11,429 - agent - DEBUG - middleware.py:46 - [log_before_model]ToolMessage | 研究背景：自然图像目标检测算法直接应用于卫星图像效果不佳，因卫星图像具有俯视视角导致目标尺度小、方向多变、背景复杂，且小目标易因特征提取困难而漏检，密集目标还存在重叠与遮挡问题。
+
+研究问题：如何提升卫星图像中小目标的检测性能，同时控制自注意力机制带来的高计算复杂度。
+
+研究方法：改进YOLOv5，提出SPH-YOLOv5模型：（1）新增浅层特征融合层和预测头以保留小目标信息；（2）首次将卷积预测头替换为Swin Transformer预测头（SPH），利用其移窗机制将计算复杂度降至线性；（3）引入基于归一化的注意力模块（NAM）增强注意力效果。
+
+实验：在NWPU-VHR10和DOTA两个常用卫星图像数据集上评估。结果表明，相比原始YOLOv5，SPH-YOLOv5在DOTA数据集上mAP提升0.071。
+
+结论：所提方法有效提升了卫星图像中小目标的检测精度，验证了Swin Transformer与注意力机制在遥感目标检测中的有效性。
+2026-09-24 13:27:17,503 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-24 13:27:17,503 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 用户本次提问选择的文献如下：
+1. Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images
+
+回答时请优先基于这些文献的内容。
+
+用户问题：你好
+2026-09-24 13:27:52,799 - agent - INFO - middleware.py:44 - [log_before_model]即将调用模型，带有11条消息。
+2026-09-24 13:27:52,800 - agent - DEBUG - middleware.py:46 - [log_before_model]HumanMessage | 用户本次提问选择的文献如下：
+1. Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images
+2. This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.
+
+回答时请优先基于这些文献的内容。
+
+用户问题：分析一下这两篇论文的相似之处
+2026-09-24 15:07:12,745 - agent - ERROR - llm_extract.py:35 - [PDF清洗]模型清洗失败：HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300)
+Traceback (most recent call last):
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\util\retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\VScodeProjects\ScholarSight\backend\app\utils\llm_extract.py", line 28, in clean_pdf_text
+    response = chat_model.invoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_core\language_models\chat_models.py", line 474, in invoke
+    self.generate_prompt(
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\chat_models\tongyi.py", line 669, in _generate
+    resp = self.completion_with_retry(**params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\chat_models\tongyi.py", line 540, in completion_with_retry
+    return _completion_with_retry(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\tenacity\__init__.py", line 331, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\tenacity\__init__.py", line 393, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\langchain_community\chat_models\tongyi.py", line 537, in _completion_with_retry
+    resp = self.client.call(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\dashscope\aigc\generation.py", line 181, in call
+    response = super().call(
+               ^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\dashscope\client\base_api.py", line 515, in call
+    return request.call()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\dashscope\api_entities\http_request.py", line 143, in call
+    output = next(response)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\dashscope\api_entities\http_request.py", line 501, in _handle_request
+    raise e
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\dashscope\api_entities\http_request.py", line 475, in _handle_request
+    response = session.post(
+               ^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\superhero\.conda\envs\LangChain-RAG-FastAPI-Service\Lib\site-packages\requests\adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=300)
+2026-09-24 15:07:12,947 - agent - INFO - papers.py:112 - [论文入库]大模型清洗结果为空或过短，保留原文
+2026-09-24 15:41:41,943 - agent - WARNING - llm_extract.py:22 - [⚠️ PDF清洗]文本过长（57082字，上限10000），跳过模型清洗，保留原文
+2026-09-24 15:41:41,944 - agent - INFO - papers.py:97 - 💡 [论文入库]大模型清洗结果为空或过短，保留原文
+2026-09-24 15:48:24,233 - agent - WARNING - llm_extract.py:22 - [⚠️  PDF清洗]文本过长（57082字，上限10000），跳过模型清洗，保留原文
+2026-09-24 15:48:24,234 - agent - INFO - papers.py:97 - [💡  论文入库]大模型清洗结果为空或过短，保留原文
+2026-09-24 15:48:54,266 - agent - INFO - vector_store.py:158 - [向量入库]文本内容写入向量库成功（162个分片）
+2026-09-24 16:12:00,354 - agent - WARNING - llm_extract.py:47 - [⚠️  PDF清洗]文本过长（21055字，上限20000），跳过模型清洗，保留原文
+2026-09-24 16:12:00,354 - agent - INFO - papers.py:106 - [💡  论文入库]大模型清洗结果为空
+2026-09-24 16:12:07,252 - agent - INFO - vector_store.py:158 - [向量入库]文本内容写入向量库成功（61个分片）
+2026-09-24 16:17:35,410 - agent - INFO - papers.py:96 - [💡  论文入库]采用大模型清洗后的文本（15396字 vs 原文17198字）
+2026-09-24 16:17:42,023 - agent - INFO - vector_store.py:158 - [向量入库]文本内容写入向量库成功（51个分片）

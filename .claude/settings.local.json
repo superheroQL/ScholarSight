@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/c/Users/superhero/.conda/envs/LangChain-RAG-FastAPI-Service/python -)",
+      "Bash(node --check /c/Users/SUPERH~1/AppData/Local/Temp/lm_check.mjs)"
+    ]
+  }
+}
